@@ -1,0 +1,17 @@
+public class Moto extends Veiculo {
+    private boolean bau;
+
+    public Moto(String placa, double capacidade, boolean bau) {
+        super(placa, capacidade);
+        this.bau = bau;
+    }
+
+    public boolean hasBau() {
+        return bau;
+    }
+
+    @Override
+    public String getTipo() {
+        return "Moto";
+    }
+}
